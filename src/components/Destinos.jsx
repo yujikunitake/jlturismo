@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     marginTop: 12,
     textAlign: "center",
     fontSize: 14,
-    color: "#0f172a",
+    color: "#ffffff",
     fontWeight: "600",
   },
 });
