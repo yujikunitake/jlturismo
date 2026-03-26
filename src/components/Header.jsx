@@ -1,3 +1,10 @@
+/**
+ * Cabeçalho: logo, nome e links de navegação (Início, Destinos, Contato).
+ *
+ * No celular não existe <a href="..."> como na web; usamos Pressable (área clicável)
+ * e Text para o texto. As ações vêm do pai (Home) via props — assim o Header não
+ * precisa saber como rolar a página, só chama a função que recebeu.
+ */
 import { Image, Pressable, Text, View, StyleSheet } from "react-native";
 import heroLogo from "../assets/hero.png";
 
@@ -28,6 +35,8 @@ export default function Header({
   );
 }
 
+// StyleSheet.create agrupa estilos e ajuda o React Native a otimizar. É parecido com CSS,
+// mas com nomes em camelCase (backgroundColor, não background-color).
 const styles = StyleSheet.create({
   header: {
     paddingHorizontal: 16,

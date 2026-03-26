@@ -1,3 +1,15 @@
+/**
+ * Lista de pacotes/destinos em cards.
+ *
+ * - `destinations` é um array de objetos (dados estáticos). Em um app real,
+ *   isso poderia vir de uma API depois.
+ * - useState guarda qual card está "aberto" (mostra a descrição longa).
+ *   activeDestinationId = null significa nenhum aberto; ou um número (id).
+ * - .map() percorre o array e devolve um componente por item; `key` ajuda o React
+ *   a identificar cada item na lista (obrigatório quando há lista).
+ *
+ * O arquivo chama-se Destinos.jsx por histórico; o componente exportado é Destinations.
+ */
 import { useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 

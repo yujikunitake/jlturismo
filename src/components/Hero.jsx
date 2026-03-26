@@ -1,9 +1,17 @@
+/**
+ * Faixa "hero" com imagem de fundo, texto de boas-vindas e botão principal.
+ *
+ * No React Native não existe `background-image` no CSS da web; usamos ImageBackground
+ * para colocar uma imagem atrás do conteúdo. Um View escuro (overlay) deixa o texto legível.
+ * onPressPackage vem do pai: quando o usuário toca "Ver meu pacote", rola até os destinos.
+ */
 import { ImageBackground, Pressable, StyleSheet, Text, View } from "react-native";
 import heroBg from "../assets/hero.png";
 
 export default function Hero({ onPressPackage }) {
   return (
     <ImageBackground source={heroBg} style={styles.hero} resizeMode="cover">
+      {/* Camada semi-transparente por cima da foto */}
       <View style={styles.overlay} />
       <View style={styles.content}>
         <Text style={styles.title}>Bem-vindo à E&Y Turismo</Text>

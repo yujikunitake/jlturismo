@@ -1,3 +1,6 @@
+/**
+ * Rodapé: texto fixo no final da página. Só View + Text; sem interação.
+ */
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Footer() {

@@ -1,3 +1,14 @@
+/**
+ * Botão flutuante que abre o WhatsApp com número e mensagem pré-preenchida.
+ *
+ * - Linking.openURL pede ao sistema (iOS/Android) para abrir o URL; no caso, wa.me
+ *   abre o app do WhatsApp se estiver instalado.
+ * - encodeURIComponent garante que a mensagem com caracteres especiais vá certa na URL.
+ * - position: 'absolute' + right/bottom fixa o botão no canto da tela (em relação ao pai
+ *   que tem flex: 1 em Home).
+ * - pointerEvents="box-none" no container: toques passam através do View vazio,
+ *   exceto no botão (útil quando há elementos sobrepostos).
+ */
 import { Linking, Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function WhatsAppButton() {
