@@ -1,9 +1,13 @@
 # PostgreSQL para desenvolvimento local.
 # Uso: copie .env.example para .env, ajuste as senhas e rode: docker compose up -d
+#
+# Requer PostgreSQL 18+ para uuidv7() nas migrations (tabela users).
+# Se você vinha da imagem 16 e o volume antigo causar erro, use: docker compose down -v
+# (apaga dados locais) e suba de novo.
 
 services:
   postgres:
-    image: postgres:16-alpine
+    image: postgres:18-alpine
     container_name: jlturismo-postgres
     restart: unless-stopped
     environment:
