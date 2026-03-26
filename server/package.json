@@ -1,0 +1,20 @@
+{
+  "name": "jlturismo-server",
+  "private": true,
+  "version": "0.0.1",
+  "description": "API e Prisma (migrations) para o banco PostgreSQL",
+  "scripts": {
+    "db:migrate": "dotenv -e ../.env -- prisma migrate deploy",
+    "db:migrate:dev": "dotenv -e ../.env -- prisma migrate dev",
+    "db:generate": "dotenv -e ../.env -- prisma generate",
+    "db:studio": "dotenv -e ../.env -- prisma studio",
+    "db:validate": "dotenv -e ../.env -- prisma validate"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^8.0.0",
+    "prisma": "^6.19.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.0"
+  }
+}

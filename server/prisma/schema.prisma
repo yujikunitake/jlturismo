@@ -1,0 +1,20 @@
+// Schema reflete a migration em prisma/migrations/.
+// A senha nunca deve ser gravada em texto puro: guarde apenas o hash (ex.: bcrypt) em `password`.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  email    String @unique
+  name     String
+  password String @db.Text
+
+  @@map("users")
+}
