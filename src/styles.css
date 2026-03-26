@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #0b907c;
+    color: #e9ebe9;
+}
+
+.header a {
+    margin-left: 10px;
+    color:rgb(246, 244, 244);
+    text-decoration: underline;
+}
+
+.hero {
+    height: 700px;
+    background: 
+        linear-gradient(#05c0a3, #000000, #000000),
+        url("/src/assets/hero.png") no-repeat center;
+    background-size: cover;
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button {
+        margin-top: 50px;
+        border-radius: 80px;
+    }
+}
+
+.hero button {
+    padding: 10px 20px;
+    background:#5d5d5d;
+    color:#f4f7f4;
+    border: 5px solid #0b907c;
+    cursor: pointer;
+
+
+}
+
+.destinos {
+    padding: 200px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    padding: 50px;
+    border: 5px solid #0b907c;
+    border-radius: 80px;
+}
+
+.footer {
+    background:#0a3d62;
+    color:#f4f7f4;
+    text-align: center;
+    padding: 10px;
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0a6221;
+  color: white;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 10px #363636;
+  z-index: 1000;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}

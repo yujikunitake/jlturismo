@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "ljturismo",
+    "slug": "ljturismo",
+    "scheme": "ljturismo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["ios", "android"],
+    "userInterfaceStyle": "automatic",
+    "jsEngine": "hermes",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ljturismo.app"
+    },
+    "android": {
+      "package": "com.ljturismo.app"
+    }
+  }
+}
+
